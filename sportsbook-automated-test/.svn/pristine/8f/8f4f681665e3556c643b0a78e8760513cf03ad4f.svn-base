@@ -1,0 +1,25 @@
+package com.williamhill;
+
+import java.util.concurrent.TimeUnit;
+
+import junit.framework.TestCase;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class SportsbookBrowserTest extends TestCase {
+
+	public void testNavigateToEvent() {
+		WebDriver webDriver = new FirefoxDriver();
+		webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		webDriver.navigate().to("http://sports.williamhill.com");
+		//webDriver.findElement(By.id("yesBtn")).click();
+		webDriver.findElement(By.linkText("Football")).click();
+		webDriver.findElement(By.linkText("QPR   v   Southampton")).click();
+		webDriver.close();
+	}
+
+}

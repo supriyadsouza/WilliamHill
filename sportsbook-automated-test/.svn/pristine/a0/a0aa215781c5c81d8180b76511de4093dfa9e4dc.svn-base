@@ -1,0 +1,13 @@
+1) Navigate to http://sports.williamhill.com
+ - Check Page contains links for Football, Horse Racing & Tennis
+ - Check Page contains link to gambleaware.co.uk
+
+2) Navigate to SPORT_TYPE
+ - Check empty Bet Slip appears
+ - Check Page contains link to gambleaware.co.uk
+ - Check Page title contains SPORT_TYPE
+
+3) Navigate to EVENT
+ - Check empty Bet Slip appears
+ - Check Page contains link to gambleaware.co.uk
+ - Check Page title contains EVENT
